@@ -4,7 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Fragment
+  - Stabilite
+  - AmeClair
+  - AmeSombre
+  - Purete
+  - Corruption
+  - Instabilite
   layers:
   - Default
   - TransparentFX

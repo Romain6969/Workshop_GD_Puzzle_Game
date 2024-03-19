@@ -5,16 +5,12 @@ using UnityEngine;
 public class CreateFragement : MonoBehaviour
 {
     public GameObject Fragement;
-    private float _time;
 
     private void FixedUpdate()
     {
-        _time += Time.deltaTime;
-
-        if (_time > 2)
+        if (GameObject.Find("Fragment") == null && GameObject.Find("Fragment(Clone)") == null)
         {
             Instantiate(Fragement);
-            _time = 0;
         }
     }
 }

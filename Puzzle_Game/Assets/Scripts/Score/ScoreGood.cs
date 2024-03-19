@@ -6,16 +6,56 @@ using TMPro;
 public class ScoreGood : MonoBehaviour
 {
     public TMP_Text TextGood;
-    private int score;
+    public int scoreGood;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Fragment"))
+        if(collision.CompareTag("Stabilite"))
         {
-            score = score + 1;
-            Destroy(GameObject.Find("Fragment"));
-            Destroy(GameObject.Find("Fragment(Clone)"));
+            scoreGood = scoreGood + 1;
+            Destroy(GameObject.Find("Stabilite"));
+            Destroy(GameObject.Find("Stabilite(Clone)"));
         }
-        TextGood.text = ($"{score}");
+        if (collision.CompareTag("AmeClair"))
+        {
+            scoreGood = scoreGood + 2;
+            Destroy(GameObject.Find("AmeClair"));
+            Destroy(GameObject.Find("AmeClair(Clone)"));
+        }
+        if (collision.CompareTag("AmeSombre"))
+        {
+            scoreGood = scoreGood + 1;
+            Destroy(GameObject.Find("AmeSombre"));
+            Destroy(GameObject.Find("AmeSombre(Clone)"));
+        }
+        if (collision.CompareTag("Purete"))
+        {
+            scoreGood = scoreGood + 3;
+            Destroy(GameObject.Find("Purete"));
+            Destroy(GameObject.Find("Purete(Clone)"));
+        }
+        if (collision.CompareTag("Corruption"))
+        {
+            scoreGood = scoreGood + 0;
+            Destroy(GameObject.Find("Corruption"));
+            Destroy(GameObject.Find("Corruption(Clone)"));
+        }
+        if (collision.CompareTag("Instabilite"))
+        {
+            scoreGood = scoreGood + 7;
+            Destroy(GameObject.Find("Instabilite"));
+            Destroy(GameObject.Find("Instabilite(Clone)"));
+        }
+
+
+
+
+
+
+
+
+
+
+        TextGood.text = ($"{scoreGood}");
     }
 }

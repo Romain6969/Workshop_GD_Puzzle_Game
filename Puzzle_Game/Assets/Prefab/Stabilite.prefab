@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 3209360252765925297}
   - component: {fileID: 325457028960400389}
   - component: {fileID: 7763490947290573891}
+  - component: {fileID: 320029456871646768}
   m_Layer: 0
-  m_Name: Fragment
-  m_TagString: Fragment
+  m_Name: Stabilite
+  m_TagString: Stabilite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,7 +102,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.6
+  m_GravityScale: 0.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -148,3 +149,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &320029456871646768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846995363668193210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a858d989b1eb52b4da87aabecf47c718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
