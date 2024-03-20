@@ -6,6 +6,9 @@ using TMPro;
 public class ScoreEvil : MonoBehaviour
 {
     public TMP_Text TextEvil;
+    public SpriteRenderer spriterend;
+    public Sprite newSprite;
+    public Sprite OldSprite;
     public int scoreEvil;
     public int stabiliteEvil = 1;
     public int ameClairEvil = 1;
@@ -15,6 +18,11 @@ public class ScoreEvil : MonoBehaviour
     public int instabiliteEvil = 7;
     public int ameExplosifEvil = 15;
     public int SpiraleEvil = 15;
+
+    private void Start()
+    {
+        spriterend.sprite = OldSprite;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -59,6 +67,7 @@ public class ScoreEvil : MonoBehaviour
             stabiliteEvil = corruptionEvil;
             Destroy(GameObject.Find("Persuasion"));
             Destroy(GameObject.Find("Persuasion(Clone)"));
+            spriterend.sprite = newSprite;
         }
         if (collision.CompareTag("AmeExplosif"))
         {

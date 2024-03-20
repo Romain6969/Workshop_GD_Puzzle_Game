@@ -191,6 +191,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextEvil: {fileID: 1452845201}
+  spriterend: {fileID: 3209360252765925297, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
+  newSprite: {fileID: -1304892039, guid: 8f31d4d681961fd48827253af4079042, type: 3}
+  OldSprite: {fileID: -974670270, guid: 8f31d4d681961fd48827253af4079042, type: 3}
   scoreEvil: 0
   stabiliteEvil: 1
   ameClairEvil: 1
@@ -732,6 +735,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextGood: {fileID: 1679396036}
+  spriterend: {fileID: 3209360252765925297, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
+  newSprite: {fileID: -1840214008, guid: 8f31d4d681961fd48827253af4079042, type: 3}
+  OldSprite: {fileID: -974670270, guid: 8f31d4d681961fd48827253af4079042, type: 3}
   scoreGood: 0
   stabiliteGood: 1
   ameClairGood: 2
