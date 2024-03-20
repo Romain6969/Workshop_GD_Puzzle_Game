@@ -63,14 +63,14 @@ public class ScoreEvil : MonoBehaviour
         if (collision.CompareTag("AmeExplosif"))
         {
             scoreEvil = scoreEvil + ameExplosifEvil;
-            Destroy(GameObject.Find("AmeExplosif"));
-            Destroy(GameObject.Find("AmeExplosif(Clone)"));
+            Destroy(GameObject.Find("AmeExplosive"));
+            Destroy(GameObject.Find("AmeExplosive(Clone)"));
         }
         if (collision.CompareTag("Spirale"))
         {
             scoreEvil = scoreEvil + SpiraleEvil;
-            Destroy(GameObject.Find("Spiral"));
-            Destroy(GameObject.Find("Spiral(Clone)"));
+            Destroy(GameObject.Find("Spirale"));
+            Destroy(GameObject.Find("Spirale(Clone)"));
         }
 
 
