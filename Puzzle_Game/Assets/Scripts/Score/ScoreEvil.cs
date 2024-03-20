@@ -7,42 +7,48 @@ public class ScoreEvil : MonoBehaviour
 {
     public TMP_Text TextEvil;
     public int scoreEvil;
+    private int stabiliteEvil = 1;
+    private int ameClairEvil = 1;
+    private int ameSombreEvil = 2;
+    private int pureteEvil = 0;
+    private int corruptionEvil = 3;
+    private int instabiliteEvil = 7;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Stabilite"))
         {
-            scoreEvil = scoreEvil + 1;
+            scoreEvil = scoreEvil + stabiliteEvil;
             Destroy(GameObject.Find("Stabilite"));
             Destroy(GameObject.Find("Stabilite(Clone)"));
         }
         if (collision.CompareTag("AmeClair"))
         {
-            scoreEvil = scoreEvil + 1;
+            scoreEvil = scoreEvil + ameClairEvil;
             Destroy(GameObject.Find("AmeClair"));
             Destroy(GameObject.Find("AmeClair(Clone)"));
         }
         if (collision.CompareTag("AmeSombre"))
         {
-            scoreEvil = scoreEvil + 2;
+            scoreEvil = scoreEvil + ameSombreEvil;
             Destroy(GameObject.Find("AmeSombre"));
             Destroy(GameObject.Find("AmeSombre(Clone)"));
         }
         if (collision.CompareTag("Purete"))
         {
-            scoreEvil = scoreEvil + 0;
+            scoreEvil = scoreEvil + pureteEvil;
             Destroy(GameObject.Find("Purete"));
             Destroy(GameObject.Find("Purete(Clone)"));
         }
         if (collision.CompareTag("Corruption"))
         {
-            scoreEvil = scoreEvil + 3;
+            scoreEvil = scoreEvil + corruptionEvil;
             Destroy(GameObject.Find("Corruption"));
             Destroy(GameObject.Find("Corruption(Clone)"));
         }
         if (collision.CompareTag("Instabilite"))
         {
-            scoreEvil = scoreEvil + 7;
+            scoreEvil = scoreEvil + instabiliteEvil;
             Destroy(GameObject.Find("Instabilite"));
             Destroy(GameObject.Find("Instabilite(Clone)"));
         }
