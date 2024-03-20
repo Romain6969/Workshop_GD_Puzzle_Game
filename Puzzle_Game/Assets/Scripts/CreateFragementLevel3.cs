@@ -9,9 +9,9 @@ public class CreateFragementLevel3 : MonoBehaviour
     public List<GameObject> Fragement;
     public static float NombreAleatoire;
     public int NombreTotaleStab = 20;
-    public int NombreTotalePer = 20;
-    public int NombreTotaleAmE = 20;
-    public int NombreTotaleSpi = 20;
+    public int NombreTotalePer = 1;
+    public int NombreTotaleAmE = 5;
+    public int NombreTotaleSpi = 5;
     public TMP_Text NbStab;
     public TMP_Text NbPer;
     public TMP_Text NbAmE;
@@ -31,34 +31,34 @@ public class CreateFragementLevel3 : MonoBehaviour
         NombreAleatoire = Random.Range(0f, 4f);
 
         Debug.Log(NombreAleatoire);
-        if (NombreTotaleStab != 0)
+        if (NombreTotalePer != 0)
         {
             if (NombreAleatoire >= 0 && NombreAleatoire < NBTarsh1)
             {
 
-                if (GameObject.Find("Stabilite") == null && GameObject.Find("Stabilite(Clone)") == null && GameObject.Find("AmeClair") == null && GameObject.Find("AmeClair(Clone)") == null && GameObject.Find("AmeSombre") == null && GameObject.Find("AmeSombre(Clone)") == null)
+                if (GameObject.Find("Stabilite") == null && GameObject.Find("Stabilite(Clone)") == null && GameObject.Find("Persuasion") == null && GameObject.Find("Persuasion(Clone)") == null && GameObject.Find("AmeExplosive") == null && GameObject.Find("AmeExplosive(Clone)") == null && GameObject.Find("Spirale") == null && GameObject.Find("Spirale(Clone)") == null)
                 {
-                    NombreTotaleStab -= 1;
+                    NombreTotalePer -= 1;
                     Instantiate(Fragement[0]);
                 }
             }
         }
-        if (NombreTotaleStab == 0)
+        if (NombreTotalePer == 0)
         {
             NBTarsh1 = 0;
         }
-        if (NombreTotalePer != 0)
+        if (NombreTotaleStab != 0)
         {
             if (NombreAleatoire > NBTarsh1 && NombreAleatoire < NBTarsh2)
             {
-                if (GameObject.Find("Purete") == null && GameObject.Find("Purete(Clone)") == null && GameObject.Find("Corruption") == null && GameObject.Find("Corruption(Clone)") == null && GameObject.Find("Instabilite") == null && GameObject.Find("Instabilite(Clone)") == null)
+                if (GameObject.Find("Stabilite") == null && GameObject.Find("Stabilite(Clone)") == null && GameObject.Find("Persuasion") == null && GameObject.Find("Persuasion(Clone)") == null && GameObject.Find("AmeExplosive") == null && GameObject.Find("AmeExplosive(Clone)") == null && GameObject.Find("Spirale") == null && GameObject.Find("Spirale(Clone)") == null)
                 {
-                    NombreTotalePer -= 1;
+                    NombreTotaleStab -= 1;
                     Instantiate(Fragement[1]);
                 }
             }
         }
-        if (NombreTotalePer == 0)
+        if (NombreTotaleStab == 0)
         {
             NBTarsh1 = 0.75f;
             NBTarsh2 = 0.75f;
@@ -68,7 +68,7 @@ public class CreateFragementLevel3 : MonoBehaviour
         {
             if (NombreAleatoire >= NBTarsh2 && NombreAleatoire < NBTarsh3)
             {
-                if (GameObject.Find("Purete") == null && GameObject.Find("Purete(Clone)") == null && GameObject.Find("Corruption") == null && GameObject.Find("Corruption(Clone)") == null && GameObject.Find("Instabilite") == null && GameObject.Find("Instabilite(Clone)") == null)
+                if (GameObject.Find("Stabilite") == null && GameObject.Find("Stabilite(Clone)") == null && GameObject.Find("Persuasion") == null && GameObject.Find("Persuasion(Clone)") == null && GameObject.Find("AmeExplosive") == null && GameObject.Find("AmeExplosive(Clone)") == null && GameObject.Find("Spirale") == null && GameObject.Find("Spirale(Clone)") == null)
                 {
                     NombreTotaleAmE -= 1;
                     Instantiate(Fragement[2]);
@@ -85,7 +85,7 @@ public class CreateFragementLevel3 : MonoBehaviour
         {
             if (NombreAleatoire >= NBTarsh3 && NombreAleatoire <= 4)
             {
-                if (GameObject.Find("Purete") == null && GameObject.Find("Purete(Clone)") == null && GameObject.Find("Corruption") == null && GameObject.Find("Corruption(Clone)") == null && GameObject.Find("Instabilite") == null && GameObject.Find("Instabilite(Clone)") == null)
+                if (GameObject.Find("Stabilite") == null && GameObject.Find("Stabilite(Clone)") == null && GameObject.Find("Persuasion") == null && GameObject.Find("Persuasion(Clone)") == null && GameObject.Find("AmeExplosive") == null && GameObject.Find("AmeExplosive(Clone)") == null && GameObject.Find("Spirale") == null && GameObject.Find("Spirale(Clone)") == null)
                 {
                     NombreTotaleSpi -= 1;
                     Instantiate(Fragement[3]);
@@ -96,7 +96,7 @@ public class CreateFragementLevel3 : MonoBehaviour
         {
             NBTarsh3 = 4;
         }
-        if (NombreTotaleStab == 0 && NombreTotalePer == 0 && NombreTotaleAmE == 0 && NombreTotaleSpi == 0 && GameObject.Find("Purete") == null && GameObject.Find("Purete(Clone)") == null && GameObject.Find("Corruption") == null && GameObject.Find("Corruption(Clone)") == null && GameObject.Find("Instabilite") == null && GameObject.Find("Instabilite(Clone)") == null)
+        if (NombreTotaleStab == 0 && NombreTotalePer == 0 && NombreTotaleAmE == 0 && NombreTotaleSpi == 0 && GameObject.Find("Stabilite") == null && GameObject.Find("Stabilite(Clone)") == null && GameObject.Find("Persuasion") == null && GameObject.Find("Persuasion(Clone)") == null && GameObject.Find("AmeExplosive") == null && GameObject.Find("AmeExplosive(Clone)") == null && GameObject.Find("Spirale") == null && GameObject.Find("Spirale(Clone)") == null)
         {
             SceneManager.LoadScene(Scene);
         }

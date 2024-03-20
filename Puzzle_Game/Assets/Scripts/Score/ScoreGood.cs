@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEditor;
 
 public class ScoreGood : MonoBehaviour
 {
     public TMP_Text TextGood;
+    public SpriteRenderer spriterend;
+    public Sprite newSprite;
+    public Sprite OldSprite;
     public int scoreGood;
     public int stabiliteGood = 1;
     public int ameClairGood = 2;
@@ -16,6 +20,10 @@ public class ScoreGood : MonoBehaviour
     public int ameExplosifGood = 0;
     public int SpiraleGood = 2;
 
+    private void Start()
+    {
+        spriterend.sprite = OldSprite;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("Stabilite"))
@@ -59,18 +67,19 @@ public class ScoreGood : MonoBehaviour
             stabiliteGood = pureteGood;
             Destroy(GameObject.Find("Persuasion"));
             Destroy(GameObject.Find("Persuasion(Clone)"));
+            spriterend.sprite = newSprite;
         }
         if (collision.CompareTag("AmeExplosif"))
         {
             scoreGood = ameExplosifGood;
-            Destroy(GameObject.Find("AmeExplosif"));
-            Destroy(GameObject.Find("AmeExplosif(Clone)"));
+            Destroy(GameObject.Find("AmeExplosive"));
+            Destroy(GameObject.Find("AmeExplosive(Clone)"));
         }
         if (collision.CompareTag("Spirale"))
         {
             scoreGood = scoreGood * SpiraleGood;
-            Destroy(GameObject.Find("Spiral"));
-            Destroy(GameObject.Find("Spiral(Clone)"));
+            Destroy(GameObject.Find("Spirale"));
+            Destroy(GameObject.Find("Spirale(Clone)"));
         }
 
 
