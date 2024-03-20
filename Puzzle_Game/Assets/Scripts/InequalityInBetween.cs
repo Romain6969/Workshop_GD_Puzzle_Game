@@ -20,7 +20,6 @@ public class InequalityInBetween : MonoBehaviour
         _evilScore = scoreEvil.scoreEvil;
         _goodScore = scoreGood.scoreGood;
         _difference = _goodScore - _evilScore;
-        Debug.Log(_difference);
 
         if (_difference >= 20)
         {

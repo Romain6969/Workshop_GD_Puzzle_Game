@@ -16,13 +16,25 @@ PrefabInstance:
       propertyPath: m_TagString
       value: AmeSombre
       objectReference: {fileID: 0}
+    - target: {fileID: 3209360252765925297, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3209360252765925297, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
+      propertyPath: m_Color.g
+      value: 0.2244277
+      objectReference: {fileID: 0}
+    - target: {fileID: 3209360252765925297, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3795925005020447583, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3795925005020447583, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 3795925005020447583, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
       propertyPath: m_LocalPosition.z

@@ -1,38 +1,83 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class CreateFragement : MonoBehaviour
 {
     public List<GameObject> Fragement;
     public static float NombreAleatoire;
+    private int NombreTotaleStab = 20;
+    private int NombreTotaleAmC = 20;
+    private int NombreTotaleAmS = 20;
+    public TMP_Text NbStab;
+    public TMP_Text NbAmC;
+    public TMP_Text NbAmS;
+    public string Scene;
+    private float NBTarsh1 = 1;
+    private float NBTarsh2 = 2;
 
     private void FixedUpdate()
     {
-        NombreAleatoire = Random.Range(0f, 3f);
-        if (NombreAleatoire >= 0 && NombreAleatoire < 1)
-        {
+        NbStab.text = $"{NombreTotaleStab}";
+        NbAmC.text = $"{NombreTotaleAmC}";
+        NbAmS.text = $"{NombreTotaleAmS}";
 
-            if (GameObject.Find("Stabilite") == null && GameObject.Find("Stabilite(Clone)") == null && GameObject.Find("AmeClair") == null && GameObject.Find("AmeClair(Clone)") == null && GameObject.Find("AmeSombre") == null && GameObject.Find("AmeSombre(Clone)") == null)
+        NombreAleatoire = Random.Range(0,3);
+
+        Debug.Log(NombreAleatoire);
+        if(NombreTotaleStab != 0)
+        {
+            if (NombreAleatoire >= 0 && NombreAleatoire < NBTarsh1)
             {
-                Instantiate(Fragement[0]);
+
+                if (GameObject.Find("Stabilite") == null && GameObject.Find("Stabilite(Clone)") == null && GameObject.Find("AmeClair") == null && GameObject.Find("AmeClair(Clone)") == null && GameObject.Find("AmeSombre") == null && GameObject.Find("AmeSombre(Clone)") == null)
+                {
+                    NombreTotaleStab -= 1;
+                    Instantiate(Fragement[0]);
+                }
             }
         }
-        if (NombreAleatoire >= 1 && NombreAleatoire < 2)
+        if(NombreTotaleStab == 0)
         {
-            if (GameObject.Find("Stabilite") == null && GameObject.Find("Stabilite(Clone)") == null && GameObject.Find("AmeClair") == null && GameObject.Find("AmeClair(Clone)") == null && GameObject.Find("AmeSombre") == null && GameObject.Find("AmeSombre(Clone)") == null)
+            NBTarsh1 = 0;
+        }
+        if(NombreTotaleAmC != 0)
+        {
+            if (NombreAleatoire > NBTarsh1 && NombreAleatoire < NBTarsh2)
             {
-                Instantiate(Fragement[1]);
+                if (GameObject.Find("Stabilite") == null && GameObject.Find("Stabilite(Clone)") == null && GameObject.Find("AmeClair") == null && GameObject.Find("AmeClair(Clone)") == null && GameObject.Find("AmeSombre") == null && GameObject.Find("AmeSombre(Clone)") == null)
+                {
+                    NombreTotaleAmC -= 1;
+                    Instantiate(Fragement[1]);
+                }
             }
         }
-        if (NombreAleatoire >= 2 && NombreAleatoire < 3)
+        if (NombreTotaleAmC == 0)
         {
-            if (GameObject.Find("Stabilite") == null && GameObject.Find("Stabilite(Clone)") == null && GameObject.Find("AmeClair") == null && GameObject.Find("AmeClair(Clone)") == null && GameObject.Find("AmeSombre") == null && GameObject.Find("AmeSombre(Clone)") == null)
+            NBTarsh1 = 0.5f;
+            NBTarsh2 = 0.5f;
+        }
+        if (NombreTotaleAmS != 0)
+        {
+            if (NombreAleatoire >= NBTarsh2 && NombreAleatoire <= 3)
             {
-                Instantiate(Fragement[2]);
+                if (GameObject.Find("Stabilite") == null && GameObject.Find("Stabilite(Clone)") == null && GameObject.Find("AmeClair") == null && GameObject.Find("AmeClair(Clone)") == null && GameObject.Find("AmeSombre") == null && GameObject.Find("AmeSombre(Clone)") == null)
+                {
+                    NombreTotaleAmS -= 1;
+                    Instantiate(Fragement[2]);
+                }
             }
         }
-
-
+        if (NombreTotaleAmS == 0)
+        {
+            NBTarsh2 = 3;
+        }
+        if (NombreTotaleStab == 0 && NombreTotaleAmC == 0 && NombreTotaleAmS == 0 && GameObject.Find("Stabilite") == null && GameObject.Find("Stabilite(Clone)") == null && GameObject.Find("AmeClair") == null && GameObject.Find("AmeClair(Clone)") == null && GameObject.Find("AmeSombre") == null && GameObject.Find("AmeSombre(Clone)") == null)
+        {
+            SceneManager.LoadScene(Scene);
+        }
     }
 }
