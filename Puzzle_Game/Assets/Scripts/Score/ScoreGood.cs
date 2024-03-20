@@ -7,12 +7,14 @@ public class ScoreGood : MonoBehaviour
 {
     public TMP_Text TextGood;
     public int scoreGood;
-    private int stabiliteGood = 1;
-    private int ameClairGood = 2;
-    private int ameSombreGood = 1;
-    private int pureteGood = 3;
-    private int corruptionGood = 0;
-    private int instabiliteGood = 7;
+    public int stabiliteGood = 1;
+    public int ameClairGood = 2;
+    public int ameSombreGood = 1;
+    public int pureteGood = 3;
+    public int corruptionGood = 0;
+    public int instabiliteGood = 7;
+    public int ameExplosifGood = 0;
+    public int SpiraleGood = 2;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -52,7 +54,24 @@ public class ScoreGood : MonoBehaviour
             Destroy(GameObject.Find("Instabilite"));
             Destroy(GameObject.Find("Instabilite(Clone)"));
         }
-
+        if (collision.CompareTag("Persuasion"))
+        {
+            stabiliteGood = pureteGood;
+            Destroy(GameObject.Find("Persuasion"));
+            Destroy(GameObject.Find("Persuasion(Clone)"));
+        }
+        if (collision.CompareTag("AmeExplosif"))
+        {
+            scoreGood = ameExplosifGood;
+            Destroy(GameObject.Find("AmeExplosif"));
+            Destroy(GameObject.Find("AmeExplosif(Clone)"));
+        }
+        if (collision.CompareTag("Spirale"))
+        {
+            scoreGood = scoreGood * SpiraleGood;
+            Destroy(GameObject.Find("Spiral"));
+            Destroy(GameObject.Find("Spiral(Clone)"));
+        }
 
 
 

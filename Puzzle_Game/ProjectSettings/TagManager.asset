@@ -10,6 +10,9 @@ TagManager:
   - Purete
   - Corruption
   - Instabilite
+  - Persuasion
+  - AmeExplosif
+  - Spirale
   layers:
   - Default
   - TransparentFX

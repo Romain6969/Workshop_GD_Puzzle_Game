@@ -9,15 +9,15 @@ public class CreateFragement : MonoBehaviour
 {
     public List<GameObject> Fragement;
     public static float NombreAleatoire;
-    private int NombreTotaleStab = 20;
-    private int NombreTotaleAmC = 20;
-    private int NombreTotaleAmS = 20;
+    public int NombreTotaleStab = 20;
+    public int NombreTotaleAmC = 20;
+    public int NombreTotaleAmS = 20;
     public TMP_Text NbStab;
     public TMP_Text NbAmC;
     public TMP_Text NbAmS;
     public string Scene;
-    private float NBTarsh1 = 1;
-    private float NBTarsh2 = 2;
+    public float NBTarsh1 = 1;
+    public float NBTarsh2 = 2;
 
     private void FixedUpdate()
     {
@@ -25,7 +25,7 @@ public class CreateFragement : MonoBehaviour
         NbAmC.text = $"{NombreTotaleAmC}";
         NbAmS.text = $"{NombreTotaleAmS}";
 
-        NombreAleatoire = Random.Range(0,3);
+        NombreAleatoire = Random.Range(0f,3f);
 
         Debug.Log(NombreAleatoire);
         if(NombreTotaleStab != 0)

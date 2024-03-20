@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class InequalityInBetween : MonoBehaviour
 {
-    private int _difference;
-    private int _goodScore;
-    private int _evilScore;
+    public int _difference;
+    public int _goodScore;
+    public int _evilScore;
     public string Scene;
     public ScoreEvil scoreEvil;
     public ScoreGood scoreGood;

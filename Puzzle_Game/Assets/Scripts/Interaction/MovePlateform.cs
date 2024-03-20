@@ -5,7 +5,7 @@ using UnityEngine;
 public class MovePlateform : MonoBehaviour
 {
     private Rigidbody2D _rigidbody;
-    private float _rotation = 45;
+    public float _rotation = 45;
 
     private void Awake()
     {

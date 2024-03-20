@@ -7,12 +7,14 @@ public class ScoreEvil : MonoBehaviour
 {
     public TMP_Text TextEvil;
     public int scoreEvil;
-    private int stabiliteEvil = 1;
-    private int ameClairEvil = 1;
-    private int ameSombreEvil = 2;
-    private int pureteEvil = 0;
-    private int corruptionEvil = 3;
-    private int instabiliteEvil = 7;
+    public int stabiliteEvil = 1;
+    public int ameClairEvil = 1;
+    public int ameSombreEvil = 2;
+    public int pureteEvil = 0;
+    public int corruptionEvil = 3;
+    public int instabiliteEvil = 7;
+    public int ameExplosifEvil = 15;
+    public int SpiraleEvil = 15;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -51,6 +53,24 @@ public class ScoreEvil : MonoBehaviour
             scoreEvil = scoreEvil + instabiliteEvil;
             Destroy(GameObject.Find("Instabilite"));
             Destroy(GameObject.Find("Instabilite(Clone)"));
+        }
+        if (collision.CompareTag("Persuasion"))
+        {
+            stabiliteEvil = corruptionEvil;
+            Destroy(GameObject.Find("Persuasion"));
+            Destroy(GameObject.Find("Persuasion(Clone)"));
+        }
+        if (collision.CompareTag("AmeExplosif"))
+        {
+            scoreEvil = scoreEvil + ameExplosifEvil;
+            Destroy(GameObject.Find("AmeExplosif"));
+            Destroy(GameObject.Find("AmeExplosif(Clone)"));
+        }
+        if (collision.CompareTag("Spirale"))
+        {
+            scoreEvil = scoreEvil + SpiraleEvil;
+            Destroy(GameObject.Find("Spiral"));
+            Destroy(GameObject.Find("Spiral(Clone)"));
         }
 
 

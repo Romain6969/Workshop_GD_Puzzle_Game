@@ -5,6 +5,7 @@ using UnityEngine;
 public class MoreGravity : MonoBehaviour
 {
     private Rigidbody2D _rigidbody2D;
+    public int Gravity = 5;
 
     private void Start()
     {
@@ -15,7 +16,7 @@ public class MoreGravity : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            _rigidbody2D.gravityScale = 5;
+            _rigidbody2D.gravityScale = Gravity;
         }
     }
 }
