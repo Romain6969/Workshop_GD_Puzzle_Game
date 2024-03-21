@@ -6,9 +6,12 @@ using TMPro;
 public class ScoreEvil : MonoBehaviour
 {
     public TMP_Text TextEvil;
-    public SpriteRenderer spriterend;
+    public SpriteRenderer spriterendStab;
+    public SpriteRenderer spriterendIns;
     public Sprite newSprite;
     public Sprite OldSprite;
+    public Sprite NewSpriteIns;
+    public Sprite OldSpriteIns;
     public int scoreEvil;
     public int stabiliteEvil = 1;
     public int ameClairEvil = 1;
@@ -18,10 +21,12 @@ public class ScoreEvil : MonoBehaviour
     public int instabiliteEvil = 7;
     public int ameExplosifEvil = 15;
     public int SpiraleEvil = 15;
+    public int RuseEvil = 7;
 
     private void Start()
     {
-        spriterend.sprite = OldSprite;
+        spriterendStab.sprite = OldSprite;
+        spriterendIns.sprite = OldSpriteIns;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -67,7 +72,7 @@ public class ScoreEvil : MonoBehaviour
             stabiliteEvil = corruptionEvil;
             Destroy(GameObject.Find("Persuasion"));
             Destroy(GameObject.Find("Persuasion(Clone)"));
-            spriterend.sprite = newSprite;
+            spriterendStab.sprite = newSprite;
         }
         if (collision.CompareTag("AmeExplosif"))
         {
@@ -81,6 +86,14 @@ public class ScoreEvil : MonoBehaviour
             Destroy(GameObject.Find("Spirale"));
             Destroy(GameObject.Find("Spirale(Clone)"));
         }
+        if (collision.CompareTag("Ruse"))
+        {
+            scoreEvil = scoreEvil + RuseEvil;
+            instabiliteEvil = instabiliteEvil * -1;
+            spriterendIns.sprite = NewSpriteIns;
+            Destroy(GameObject.Find("Ruse"));
+            Destroy(GameObject.Find("Ruse(Clone)"));
+        }
 
 
 
@@ -91,8 +104,10 @@ public class ScoreEvil : MonoBehaviour
 
 
 
-
-
+        if (scoreEvil < 0)
+        {
+            scoreEvil = 0;
+        }
         TextEvil.text = ($"{scoreEvil}");
     }
 }

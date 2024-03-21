@@ -7,9 +7,12 @@ using UnityEditor;
 public class ScoreGood : MonoBehaviour
 {
     public TMP_Text TextGood;
-    public SpriteRenderer spriterend;
+    public SpriteRenderer spriterendStab;
+    public SpriteRenderer spriterendIns;
     public Sprite newSprite;
     public Sprite OldSprite;
+    public Sprite NewSpriteIns;
+    public Sprite OldSpriteIns;
     public int scoreGood;
     public int stabiliteGood = 1;
     public int ameClairGood = 2;
@@ -19,10 +22,13 @@ public class ScoreGood : MonoBehaviour
     public int instabiliteGood = 7;
     public int ameExplosifGood = 0;
     public int SpiraleGood = 2;
+    public int RuseGood = 7;
 
     private void Start()
     {
-        spriterend.sprite = OldSprite;
+        spriterendStab.sprite = OldSprite;
+        spriterendIns.sprite = OldSpriteIns;
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -67,7 +73,7 @@ public class ScoreGood : MonoBehaviour
             stabiliteGood = pureteGood;
             Destroy(GameObject.Find("Persuasion"));
             Destroy(GameObject.Find("Persuasion(Clone)"));
-            spriterend.sprite = newSprite;
+            spriterendStab.sprite = newSprite;
         }
         if (collision.CompareTag("AmeExplosif"))
         {
@@ -81,6 +87,14 @@ public class ScoreGood : MonoBehaviour
             Destroy(GameObject.Find("Spirale"));
             Destroy(GameObject.Find("Spirale(Clone)"));
         }
+        if (collision.CompareTag("Ruse"))
+        {
+            scoreGood = scoreGood + RuseGood;
+            instabiliteGood = instabiliteGood * -1;
+            spriterendIns.sprite = NewSpriteIns;
+            Destroy(GameObject.Find("Ruse"));
+            Destroy(GameObject.Find("Ruse(Clone)"));
+        }
 
 
 
@@ -89,7 +103,10 @@ public class ScoreGood : MonoBehaviour
 
 
 
-
+        if (scoreGood < 0)
+        {
+            scoreGood = 0;
+        }
         TextGood.text = ($"{scoreGood}");
     }
 }

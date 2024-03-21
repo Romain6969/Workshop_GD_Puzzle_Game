@@ -1032,28 +1032,14 @@ GameObject:
   - component: {fileID: 958625229}
   - component: {fileID: 958625228}
   - component: {fileID: 958625227}
-  - component: {fileID: 958625226}
+  - component: {fileID: 958625231}
   m_Layer: 0
-  m_Name: ScoreEvil
+  m_Name: ScoreGood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &958625226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958625225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccf25470829da4447833067f8e33cc76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TextEvil: {fileID: 101356465}
-  scoreEvil: 0
 --- !u!61 &958625227
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1193,6 +1179,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &958625231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958625225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8204fb1b8e120e4196283fbec074106, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextGood: {fileID: 364221308}
+  spriterendStab: {fileID: 0}
+  spriterendIns: {fileID: 0}
+  newSprite: {fileID: 0}
+  OldSprite: {fileID: 0}
+  NewSpriteIns: {fileID: 0}
+  OldSpriteIns: {fileID: 0}
+  scoreGood: 0
+  stabiliteGood: 1
+  ameClairGood: 2
+  ameSombreGood: 1
+  pureteGood: 3
+  corruptionGood: 0
+  instabiliteGood: 7
+  ameExplosifGood: 0
+  SpiraleGood: 2
+  RuseGood: 7
 --- !u!1 &962803368
 GameObject:
   m_ObjectHideFlags: 0
@@ -1381,9 +1396,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6eb4a4d938882e40bf1d92378e8ec63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _difference: 0
+  _goodScore: 0
+  _evilScore: 0
   Scene: GameOver
-  scoreEvil: {fileID: 958625226}
-  scoreGood: {fileID: 1463325556}
+  scoreEvil: {fileID: 0}
+  scoreGood: {fileID: 0}
 --- !u!114 &993421131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1400,10 +1418,15 @@ MonoBehaviour:
   - {fileID: 846995363668193210, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
   - {fileID: 6930169162868961439, guid: 1d1e77e5d373d4745863181a7eaaea0c, type: 3}
   - {fileID: 401947846552275883, guid: 2a1b3caefbb039345b9d786608e49792, type: 3}
+  NombreTotaleStab: 20
+  NombreTotaleAmC: 20
+  NombreTotaleAmS: 20
   NbStab: {fileID: 2033867566}
   NbAmC: {fileID: 1427550136}
   NbAmS: {fileID: 68710743}
   Scene: Win
+  NBTarsh1: 1
+  NBTarsh2: 2
 --- !u!4 &993421132
 Transform:
   m_ObjectHideFlags: 0
@@ -1761,28 +1784,14 @@ GameObject:
   - component: {fileID: 1463325559}
   - component: {fileID: 1463325558}
   - component: {fileID: 1463325557}
-  - component: {fileID: 1463325556}
+  - component: {fileID: 1463325561}
   m_Layer: 0
-  m_Name: ScoreGood
+  m_Name: ScoreEvil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1463325556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1463325555}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8204fb1b8e120e4196283fbec074106, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TextGood: {fileID: 364221308}
-  scoreGood: 0
 --- !u!61 &1463325557
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1922,6 +1931,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1463325561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463325555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccf25470829da4447833067f8e33cc76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextEvil: {fileID: 101356465}
+  spriterendStab: {fileID: 0}
+  spriterendIns: {fileID: 0}
+  newSprite: {fileID: 0}
+  OldSprite: {fileID: 0}
+  NewSpriteIns: {fileID: 0}
+  OldSpriteIns: {fileID: 0}
+  scoreEvil: 0
+  stabiliteEvil: 1
+  ameClairEvil: 1
+  ameSombreEvil: 2
+  pureteEvil: 0
+  corruptionEvil: 3
+  instabiliteEvil: 7
+  ameExplosifEvil: 15
+  SpiraleEvil: 15
+  RuseEvil: 7
 --- !u!1 &1687526948
 GameObject:
   m_ObjectHideFlags: 0
