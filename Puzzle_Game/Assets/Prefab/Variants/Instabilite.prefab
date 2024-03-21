@@ -17,16 +17,20 @@ PrefabInstance:
       value: Instabilite
       objectReference: {fileID: 0}
     - target: {fileID: 3209360252765925297, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -199418875, guid: 086b2f83c2db564408801e818b83225b, type: 3}
+    - target: {fileID: 3209360252765925297, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
       propertyPath: m_Color.b
-      value: 0.3773585
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3209360252765925297, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
       propertyPath: m_Color.g
-      value: 0.3773585
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3209360252765925297, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
       propertyPath: m_Color.r
-      value: 0.3773585
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3795925005020447583, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
       propertyPath: m_LocalPosition.x
@@ -70,15 +74,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7763490947290573891, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
       propertyPath: m_Radius
-      value: 0.34703708
+      value: 0.33411908
       objectReference: {fileID: 0}
     - target: {fileID: 7763490947290573891, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
       propertyPath: m_Offset.x
-      value: 0.17382157
+      value: -0.6556164
       objectReference: {fileID: 0}
     - target: {fileID: 7763490947290573891, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
       propertyPath: m_Offset.y
-      value: -0.38240743
+      value: 0.62194085
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
