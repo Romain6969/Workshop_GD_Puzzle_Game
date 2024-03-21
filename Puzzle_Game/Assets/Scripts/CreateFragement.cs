@@ -27,7 +27,6 @@ public class CreateFragement : MonoBehaviour
 
         NombreAleatoire = Random.Range(0f,3f);
 
-        Debug.Log(NombreAleatoire);
         if(NombreTotaleStab != 0)
         {
             if (NombreAleatoire >= 0 && NombreAleatoire < NBTarsh1)

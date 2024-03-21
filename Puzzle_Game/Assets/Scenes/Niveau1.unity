@@ -1195,7 +1195,7 @@ MonoBehaviour:
   spriterendStab: {fileID: 0}
   spriterendIns: {fileID: 0}
   newSprite: {fileID: 0}
-  OldSprite: {fileID: 0}
+  OldSprite: {fileID: -1728560440, guid: 8f31d4d681961fd48827253af4079042, type: 3}
   NewSpriteIns: {fileID: 0}
   OldSpriteIns: {fileID: 0}
   scoreGood: 0
@@ -1947,7 +1947,7 @@ MonoBehaviour:
   spriterendStab: {fileID: 0}
   spriterendIns: {fileID: 0}
   newSprite: {fileID: 0}
-  OldSprite: {fileID: 0}
+  OldSprite: {fileID: -1728560440, guid: 8f31d4d681961fd48827253af4079042, type: 3}
   NewSpriteIns: {fileID: 0}
   OldSpriteIns: {fileID: 0}
   scoreEvil: 0

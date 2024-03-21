@@ -449,11 +449,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8204fb1b8e120e4196283fbec074106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextGood: {fileID: 0}
+  TextGood: {fileID: 1649192990}
   spriterendStab: {fileID: 0}
   spriterendIns: {fileID: 0}
   newSprite: {fileID: 0}
-  OldSprite: {fileID: 0}
+  OldSprite: {fileID: -1728560440, guid: 8f31d4d681961fd48827253af4079042, type: 3}
   NewSpriteIns: {fileID: 0}
   OldSpriteIns: {fileID: 0}
   scoreGood: 0
@@ -1639,11 +1639,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf25470829da4447833067f8e33cc76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextEvil: {fileID: 0}
+  TextEvil: {fileID: 1574032265}
   spriterendStab: {fileID: 0}
   spriterendIns: {fileID: 0}
   newSprite: {fileID: 0}
-  OldSprite: {fileID: 0}
+  OldSprite: {fileID: -1728560440, guid: 8f31d4d681961fd48827253af4079042, type: 3}
   NewSpriteIns: {fileID: 0}
   OldSpriteIns: {fileID: 0}
   scoreEvil: 0

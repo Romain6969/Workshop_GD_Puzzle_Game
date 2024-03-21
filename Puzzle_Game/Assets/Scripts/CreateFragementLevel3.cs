@@ -30,7 +30,7 @@ public class CreateFragementLevel3 : MonoBehaviour
 
         NombreAleatoire = Random.Range(0f, 4f);
 
-        Debug.Log(NombreAleatoire);
+        
         if (NombreTotalePer != 0)
         {
             if (NombreAleatoire >= 0 && NombreAleatoire < NBTarsh1)

@@ -18,7 +18,7 @@ public class ScoreGood : MonoBehaviour
     public int ameClairGood = 2;
     public int ameSombreGood = 1;
     public int pureteGood = 3;
-    public int corruptionGood = 0;
+    public int corruptionGood = 3;
     public int instabiliteGood = 7;
     public int ameExplosifGood = 0;
     public int SpiraleGood = 2;
