@@ -17,8 +17,8 @@ public class ScoreGood : MonoBehaviour
     public int stabiliteGood = 1;
     public int ameClairGood = 2;
     public int ameSombreGood = 1;
-    public int pureteGood = 3;
-    public int corruptionGood = 3;
+    public int pureteGood = 5;
+    public int corruptionGood = 1;
     public int instabiliteGood = 7;
     public int ameExplosifGood = 0;
     public int SpiraleGood = 2;
@@ -46,7 +46,7 @@ public class ScoreGood : MonoBehaviour
         }
         if (collision.CompareTag("AmeSombre"))
         {
-            scoreGood = scoreGood + ameSombreGood;
+            scoreGood = scoreGood - ameSombreGood;
             Destroy(GameObject.Find("AmeSombre"));
             Destroy(GameObject.Find("AmeSombre(Clone)"));
         }

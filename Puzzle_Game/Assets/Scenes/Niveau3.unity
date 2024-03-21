@@ -1825,16 +1825,16 @@ MonoBehaviour:
   - {fileID: 301440875507974182, guid: 0c022c2ac9ba871418ed289897f066fe, type: 3}
   NombreTotaleStab: 20
   NombreTotalePer: 1
-  NombreTotaleAmE: 5
-  NombreTotaleSpi: 5
+  NombreTotaleAmE: 3
+  NombreTotaleSpi: 7
   NbStab: {fileID: 1597862962}
   NbPer: {fileID: 114782320}
   NbAmE: {fileID: 127686404}
   NbSpi: {fileID: 1614343221}
   Scene: Win
   NBTarsh1: 0.25
-  NBTarsh2: 1.5
-  NBTarsh3: 2.75
+  NBTarsh2: 1.75
+  NBTarsh3: 2.25
 --- !u!1 &2010539257
 GameObject:
   m_ObjectHideFlags: 0

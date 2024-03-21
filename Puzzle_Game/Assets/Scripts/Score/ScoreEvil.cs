@@ -16,8 +16,8 @@ public class ScoreEvil : MonoBehaviour
     public int stabiliteEvil = 1;
     public int ameClairEvil = 1;
     public int ameSombreEvil = 2;
-    public int pureteEvil = 0;
-    public int corruptionEvil = 3;
+    public int pureteEvil = 1;
+    public int corruptionEvil = 5;
     public int instabiliteEvil = 7;
     public int ameExplosifEvil = 15;
     public int SpiraleEvil = 15;
@@ -39,7 +39,7 @@ public class ScoreEvil : MonoBehaviour
         }
         if (collision.CompareTag("AmeClair"))
         {
-            scoreEvil = scoreEvil + ameClairEvil;
+            scoreEvil = scoreEvil - ameClairEvil;
             Destroy(GameObject.Find("AmeClair"));
             Destroy(GameObject.Find("AmeClair(Clone)"));
         }
