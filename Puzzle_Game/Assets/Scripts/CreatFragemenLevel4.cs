@@ -14,6 +14,7 @@ public class CreatFragemenLevel4 : MonoBehaviour
     public TMP_Text NbIns;
     public string Scene;
     public float NBTarsh1 = 1;
+    
 
     private void FixedUpdate()
     {

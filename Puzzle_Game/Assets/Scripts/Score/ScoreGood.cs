@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 using UnityEditor;
 
 public class ScoreGood : MonoBehaviour
 {
+    public ScoreEvil evilScore;
     public TMP_Text TextGood;
     public SpriteRenderer spriterendStab;
     public SpriteRenderer spriterendIns;
@@ -23,6 +25,15 @@ public class ScoreGood : MonoBehaviour
     public int ameExplosifGood = 0;
     public int SpiraleGood = 2;
     public int RuseGood = 7;
+    public int PacteDiableGood = 5;
+    public bool PacteDVer = false;
+    public int PacteAngeGood = 12;
+    public bool RestoVer = false;
+    public int AmeMotivanteGood = 2;
+    public bool AmeMotivVer = false;
+    public int FretrissementGood = 1;
+    public bool FretissVer = false;
+    public string Scene;
 
     private void Start()
     {
@@ -95,17 +106,58 @@ public class ScoreGood : MonoBehaviour
             Destroy(GameObject.Find("Ruse"));
             Destroy(GameObject.Find("Ruse(Clone)"));
         }
+        if (collision.CompareTag("PacteDiable"))
+        {
+            scoreGood = scoreGood - PacteDiableGood;
+            PacteDVer = true;
+            Destroy(GameObject.Find("PacteDiable"));
+            Destroy(GameObject.Find("PacteDiable(Clone)"));
+        }
+        if (collision.CompareTag("PacteAnge"))
+        {
+            scoreGood = scoreGood + PacteAngeGood;
+            Destroy(GameObject.Find("PacteAnge"));
+            Destroy(GameObject.Find("PacteAnge(Clone)"));
+        }
+        if (collision.CompareTag("Restauration"))
+        {
+            scoreGood = 0;
+            evilScore.scoreEvil = 0;
+            RestoVer = true;
+            Destroy(GameObject.Find("Restauration"));
+            Destroy(GameObject.Find("Restauration(Clone)"));
+        }
+        if (collision.CompareTag("AmeMotivante"))
+        {
+            AmeMotivVer = true;
+            Destroy(GameObject.Find("AmeMotivante"));
+            Destroy(GameObject.Find("AmeMotivante(Clone)"));
+        }
+        if (collision.CompareTag("Fretrissement"))
+        {
+            FretissVer = true;
+            Destroy(GameObject.Find("Fretrissement"));
+            Destroy(GameObject.Find("Fretrissement(Clone)"));
+        }
 
-
-
-
-
-
-
-
+        if (AmeMotivVer == true)
+        {
+            scoreGood = scoreGood + AmeMotivanteGood;
+        }
         if (scoreGood < 0)
         {
             scoreGood = 0;
+        }
+        if (RestoVer == true)
+        {
+            if (scoreGood > 20)
+            {
+                SceneManager.LoadScene(Scene);
+            }
+            if (evilScore.scoreEvil > 20)
+            {
+                SceneManager.LoadScene(Scene);
+            }
         }
         TextGood.text = ($"{scoreGood}");
     }

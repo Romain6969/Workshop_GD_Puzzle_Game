@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Rendering.VirtualTexturing;
 
 public class ScoreEvil : MonoBehaviour
 {
@@ -22,6 +23,14 @@ public class ScoreEvil : MonoBehaviour
     public int ameExplosifEvil = 15;
     public int SpiraleEvil = 15;
     public int RuseEvil = 7;
+    public int PacteDiableEvil = 12;
+    public int PacteAngeEvil = 5;
+    public int RestaurationEvil = 0;
+    public bool PacteAVer = false;
+    public int AmeMotivanteEvil = 0;
+    public bool AmeMotivVer = false;
+    public int FretrissementEvil = 1;
+    public bool FretissVer = false;
 
     private void Start()
     {
@@ -94,16 +103,41 @@ public class ScoreEvil : MonoBehaviour
             Destroy(GameObject.Find("Ruse"));
             Destroy(GameObject.Find("Ruse(Clone)"));
         }
-
-
-
-
-
-
-
-
-
-
+        if (collision.CompareTag("PacteDiable"))
+        {
+            scoreEvil = scoreEvil - PacteDiableEvil;
+            Destroy(GameObject.Find("PacteDiable"));
+            Destroy(GameObject.Find("PacteDiable(Clone)"));
+        }
+        if (collision.CompareTag("PacteAnge"))
+        {
+            scoreEvil = scoreEvil - PacteAngeEvil;
+            PacteAVer = false;
+            Destroy(GameObject.Find("PacteAnge"));
+            Destroy(GameObject.Find("PacteAnge(Clone)"));
+        }
+        if (collision.CompareTag("Restauration"))
+        {
+            scoreEvil = scoreEvil + RestaurationEvil;
+            Destroy(GameObject.Find("Restauration"));
+            Destroy(GameObject.Find("Restauration(Clone)"));
+        }
+        if (collision.CompareTag("AmeMotivante"))
+        {
+            AmeMotivVer = true;
+            Destroy(GameObject.Find("AmeMotivante"));
+            Destroy(GameObject.Find("AmeMotivante(Clone)"));
+        }
+        if (collision.CompareTag("Fretrissement"))
+        {
+            FretissVer = true;
+            Destroy(GameObject.Find("Fretrissement"));
+            Destroy(GameObject.Find("Fretrissement(Clone)"));
+        }
+        if (AmeMotivVer == true)
+        {
+            scoreEvil = scoreEvil + AmeMotivanteEvil;
+        }
         if (scoreEvil < 0)
         {
             scoreEvil = 0;
