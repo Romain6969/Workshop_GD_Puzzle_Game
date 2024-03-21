@@ -114,9 +114,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 430
-        width: 447.25
-        height: 430
+        y: 430.5
+        width: 443.5
+        height: 430.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec3bdb56918962a479abae70669fd397
-      internalID: -974670270
+      spriteID: eb87c0b653dfe9c49ac4f10ee0d90b36
+      internalID: -1728560440
       vertices: []
       indices: 
       edges: []
@@ -134,10 +134,10 @@ TextureImporter:
       name: planche fragments 1_1
       rect:
         serializedVersion: 2
-        x: 447
-        y: 430
-        width: 447.25
-        height: 430
+        x: 443
+        y: 430.5
+        width: 443.5
+        height: 430.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 050d88c7d29b4e6448ab02631f59e238
-      internalID: 1862944776
+      spriteID: d4aa4ff950eb2634f94e3b089a7383ea
+      internalID: 752343470
       vertices: []
       indices: 
       edges: []
@@ -155,10 +155,10 @@ TextureImporter:
       name: planche fragments 1_2
       rect:
         serializedVersion: 2
-        x: 894
-        y: 430
-        width: 447.25
-        height: 430
+        x: 886
+        y: 430.5
+        width: 443.5
+        height: 430.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08edad08bf9a2e74fbb42ed3cef7989d
-      internalID: 653966316
+      spriteID: 91f48d1e3bd421446b0ccd8d6f77192f
+      internalID: 21825118
       vertices: []
       indices: 
       edges: []
@@ -176,10 +176,10 @@ TextureImporter:
       name: planche fragments 1_3
       rect:
         serializedVersion: 2
-        x: 1341
-        y: 430
-        width: 447.25
-        height: 430
+        x: 1329
+        y: 430.5
+        width: 443.5
+        height: 430.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d09665f023b1ab54f8f026ab8185f11a
-      internalID: -1840214008
+      spriteID: 5c3cb68ee4f109a41a7c82e28dfd7ada
+      internalID: -1349925406
       vertices: []
       indices: 
       edges: []
@@ -198,9 +198,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 447.25
-        height: 430
+        y: 0.5
+        width: 443.5
+        height: 430.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,8 +208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98cdef3646556ce4887b132c82b1bf2e
-      internalID: -1304892039
+      spriteID: 7fc7e20ab1015af468880efd5847a473
+      internalID: -1624159013
       vertices: []
       indices: 
       edges: []
@@ -218,10 +218,10 @@ TextureImporter:
       name: planche fragments 1_5
       rect:
         serializedVersion: 2
-        x: 447
-        y: 0
-        width: 447.25
-        height: 430
+        x: 443
+        y: 0.5
+        width: 443.5
+        height: 430.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,8 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c9cc14a5a2162a45adf071a7246a03a
-      internalID: -202003244
+      spriteID: 9f96611038eec49419dcd7bc1924bfd7
+      internalID: 62355682
       vertices: []
       indices: 
       edges: []
@@ -239,10 +239,10 @@ TextureImporter:
       name: planche fragments 1_6
       rect:
         serializedVersion: 2
-        x: 894
-        y: 0
-        width: 447.25
-        height: 430
+        x: 886
+        y: 0.5
+        width: 443.5
+        height: 430.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,8 +250,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ac31a021624a9741bdc2310db2e8394
-      internalID: 1803875133
+      spriteID: cf1e5ff1a10523740a189ed03638ffc6
+      internalID: 1320990981
       vertices: []
       indices: 
       edges: []
@@ -260,10 +260,10 @@ TextureImporter:
       name: planche fragments 1_7
       rect:
         serializedVersion: 2
-        x: 1341
-        y: 0
-        width: 447.25
-        height: 430
+        x: 1329
+        y: 0.5
+        width: 443.5
+        height: 430.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1639e39028bceca45a9199752c1fc376
-      internalID: 861486988
+      spriteID: 4b2390c8d915a3f42adeed6eaa570013
+      internalID: -1175371599
       vertices: []
       indices: 
       edges: []
@@ -288,14 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      planche fragments 1_0: -974670270
-      planche fragments 1_1: 1862944776
-      planche fragments 1_2: 653966316
-      planche fragments 1_3: -1840214008
-      planche fragments 1_4: -1304892039
-      planche fragments 1_5: -202003244
-      planche fragments 1_6: 1803875133
-      planche fragments 1_7: 861486988
+      planche fragments 1_0: -1728560440
+      planche fragments 1_1: 752343470
+      planche fragments 1_2: 21825118
+      planche fragments 1_3: -1349925406
+      planche fragments 1_4: -1624159013
+      planche fragments 1_5: 62355682
+      planche fragments 1_6: 1320990981
+      planche fragments 1_7: -1175371599
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
