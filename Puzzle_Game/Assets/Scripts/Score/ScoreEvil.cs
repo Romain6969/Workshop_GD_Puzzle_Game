@@ -31,6 +31,7 @@ public class ScoreEvil : MonoBehaviour
     public bool AmeMotivVer = false;
     public int FretrissementEvil = 1;
     public bool FretissVer = false;
+    public CreateFragementLevel5 Level5;
 
     private void Start()
     {
@@ -113,6 +114,7 @@ public class ScoreEvil : MonoBehaviour
         {
             scoreEvil = scoreEvil - PacteAngeEvil;
             PacteAVer = false;
+            Level5.TotaleEvilPaA += 1;
             Destroy(GameObject.Find("PacteAnge"));
             Destroy(GameObject.Find("PacteAnge(Clone)"));
         }

@@ -449,13 +449,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8204fb1b8e120e4196283fbec074106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  evilScore: {fileID: 0}
   TextGood: {fileID: 1649192990}
-  spriterendStab: {fileID: 0}
-  spriterendIns: {fileID: 0}
-  newSprite: {fileID: 0}
+  spriterendStab: {fileID: 3209360252765925297, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
+  spriterendIns: {fileID: 5374520701685381836, guid: 1effaa8207977744eb8464d35901ce7d, type: 3}
+  newSprite: {fileID: -1349925406, guid: 8f31d4d681961fd48827253af4079042, type: 3}
   OldSprite: {fileID: -1728560440, guid: 8f31d4d681961fd48827253af4079042, type: 3}
-  NewSpriteIns: {fileID: 0}
-  OldSpriteIns: {fileID: 0}
+  NewSpriteIns: {fileID: -199418875, guid: 086b2f83c2db564408801e818b83225b, type: 3}
+  OldSpriteIns: {fileID: -933302570, guid: 086b2f83c2db564408801e818b83225b, type: 3}
   scoreGood: 0
   stabiliteGood: 1
   ameClairGood: 2
@@ -466,6 +467,15 @@ MonoBehaviour:
   ameExplosifGood: 0
   SpiraleGood: 2
   RuseGood: 7
+  PacteDiableGood: 5
+  PacteDVer: 0
+  PacteAngeGood: 12
+  RestoVer: 0
+  AmeMotivanteGood: 2
+  AmeMotivVer: 0
+  FretrissementGood: 1
+  FretissVer: 0
+  Scene: 
 --- !u!61 &753733954
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1569,8 +1579,8 @@ MonoBehaviour:
   _goodScore: 0
   _evilScore: 0
   Scene: GameOver
-  scoreEvil: {fileID: 0}
-  scoreGood: {fileID: 0}
+  scoreEvil: {fileID: 2135767352}
+  scoreGood: {fileID: 753733953}
 --- !u!4 &1908361343
 Transform:
   m_ObjectHideFlags: 0
@@ -1640,12 +1650,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextEvil: {fileID: 1574032265}
-  spriterendStab: {fileID: 0}
-  spriterendIns: {fileID: 0}
-  newSprite: {fileID: 0}
+  spriterendStab: {fileID: 3209360252765925297, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
+  spriterendIns: {fileID: 5374520701685381836, guid: 1effaa8207977744eb8464d35901ce7d, type: 3}
+  newSprite: {fileID: -1624159013, guid: 8f31d4d681961fd48827253af4079042, type: 3}
   OldSprite: {fileID: -1728560440, guid: 8f31d4d681961fd48827253af4079042, type: 3}
-  NewSpriteIns: {fileID: 0}
-  OldSpriteIns: {fileID: 0}
+  NewSpriteIns: {fileID: 1344108832, guid: 086b2f83c2db564408801e818b83225b, type: 3}
+  OldSpriteIns: {fileID: -199418875, guid: 086b2f83c2db564408801e818b83225b, type: 3}
   scoreEvil: 0
   stabiliteEvil: 1
   ameClairEvil: 1
@@ -1656,6 +1666,14 @@ MonoBehaviour:
   ameExplosifEvil: 15
   SpiraleEvil: 15
   RuseEvil: 7
+  PacteDiableEvil: 12
+  PacteAngeEvil: 5
+  RestaurationEvil: 0
+  PacteAVer: 0
+  AmeMotivanteEvil: 0
+  AmeMotivVer: 0
+  FretrissementEvil: 1
+  FretissVer: 0
 --- !u!61 &2135767353
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -34,6 +34,7 @@ public class ScoreGood : MonoBehaviour
     public int FretrissementGood = 1;
     public bool FretissVer = false;
     public string Scene;
+    public CreateFragementLevel5 Level5;
 
     private void Start()
     {
@@ -110,6 +111,7 @@ public class ScoreGood : MonoBehaviour
         {
             scoreGood = scoreGood - PacteDiableGood;
             PacteDVer = true;
+            Level5.TotaleGoodPaD += 1;
             Destroy(GameObject.Find("PacteDiable"));
             Destroy(GameObject.Find("PacteDiable(Clone)"));
         }
