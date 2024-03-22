@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Fretrissement
       objectReference: {fileID: 0}
+    - target: {fileID: 3209360252765925297, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1320990981, guid: 8f31d4d681961fd48827253af4079042, type: 3}
     - target: {fileID: 3795925005020447583, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -55,6 +59,18 @@ PrefabInstance:
     - target: {fileID: 3795925005020447583, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7763490947290573891, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
+      propertyPath: m_Radius
+      value: 0.32074654
+      objectReference: {fileID: 0}
+    - target: {fileID: 7763490947290573891, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.4581083
+      objectReference: {fileID: 0}
+    - target: {fileID: 7763490947290573891, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.22428238
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

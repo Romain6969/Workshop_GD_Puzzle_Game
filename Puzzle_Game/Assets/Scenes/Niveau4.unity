@@ -455,8 +455,8 @@ MonoBehaviour:
   spriterendIns: {fileID: 5374520701685381836, guid: 1effaa8207977744eb8464d35901ce7d, type: 3}
   newSprite: {fileID: -1349925406, guid: 8f31d4d681961fd48827253af4079042, type: 3}
   OldSprite: {fileID: -1728560440, guid: 8f31d4d681961fd48827253af4079042, type: 3}
-  NewSpriteIns: {fileID: -199418875, guid: 086b2f83c2db564408801e818b83225b, type: 3}
-  OldSpriteIns: {fileID: -933302570, guid: 086b2f83c2db564408801e818b83225b, type: 3}
+  NewSpriteIns: {fileID: -933302570, guid: 086b2f83c2db564408801e818b83225b, type: 3}
+  OldSpriteIns: {fileID: -199418875, guid: 086b2f83c2db564408801e818b83225b, type: 3}
   scoreGood: 0
   stabiliteGood: 1
   ameClairGood: 2
@@ -476,6 +476,7 @@ MonoBehaviour:
   FretrissementGood: 1
   FretissVer: 0
   Scene: 
+  Level5: {fileID: 0}
 --- !u!61 &753733954
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1674,6 +1675,7 @@ MonoBehaviour:
   AmeMotivVer: 0
   FretrissementEvil: 1
   FretissVer: 0
+  Level5: {fileID: 0}
 --- !u!61 &2135767353
 BoxCollider2D:
   m_ObjectHideFlags: 0
