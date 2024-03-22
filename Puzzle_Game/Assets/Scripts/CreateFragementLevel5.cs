@@ -26,6 +26,7 @@ public class CreateFragementLevel5 : MonoBehaviour
     public int TotaleEvilPaA = 0;
 
 
+
     private void FixedUpdate()
     {
         NbPaD.text = $"{NombreTotalePaD}";
@@ -40,12 +41,22 @@ public class CreateFragementLevel5 : MonoBehaviour
         Debug.Log(TotaleEvilPaA);
         Debug.Log(TotaleGoodPaD);
 
+        
+
         if (NombreTotalePaD != 0)
         {
             if (NombreAleatoire >= 0 && NombreAleatoire < NBTarsh1)
             {
                 if (GameObject.Find("PacteDiable") == null && GameObject.Find("PacteDiable(Clone)") == null && GameObject.Find("PacteAnge") == null && GameObject.Find("PacteAnge(Clone)") == null && GameObject.Find("Ruse") == null && GameObject.Find("Ruse(Clone)") == null && GameObject.Find("Instabilite") == null && GameObject.Find("Instabilite(Clone)") == null)
                 {
+                    if (evilScore.PacteAVer == true)
+                    {
+                        evilScore.scoreEvil += 1;
+                    }
+                    if (goodScore.PacteDVer == true)
+                    {
+                        goodScore.scoreGood += 1;
+                    }
                     NombreTotalePaD -= 1;
                     Instantiate(Fragement[0]);
                     
@@ -62,8 +73,17 @@ public class CreateFragementLevel5 : MonoBehaviour
             {
                 if (GameObject.Find("PacteDiable") == null && GameObject.Find("PacteDiable(Clone)") == null && GameObject.Find("PacteAnge") == null && GameObject.Find("PacteAnge(Clone)") == null && GameObject.Find("Ruse") == null && GameObject.Find("Ruse(Clone)") == null && GameObject.Find("Instabilite") == null && GameObject.Find("Instabilite(Clone)") == null)
                 {
+                    if (evilScore.PacteAVer == true)
+                    {
+                        evilScore.scoreEvil += 1;
+                    }
+                    if (goodScore.PacteDVer == true)
+                    {
+                        goodScore.scoreGood += 1;
+                    }
                     NombreTotalePaA -= 1;
                     Instantiate(Fragement[1]);
+                    
                 }
             }
         }
@@ -79,8 +99,17 @@ public class CreateFragementLevel5 : MonoBehaviour
             {
                 if (GameObject.Find("PacteDiable") == null && GameObject.Find("PacteDiable(Clone)") == null && GameObject.Find("PacteAnge") == null && GameObject.Find("PacteAnge(Clone)") == null && GameObject.Find("Ruse") == null && GameObject.Find("Ruse(Clone)") == null && GameObject.Find("Instabilite") == null && GameObject.Find("Instabilite(Clone)") == null)
                 {
+                    if (evilScore.PacteAVer == true)
+                    {
+                        evilScore.scoreEvil += 1;
+                    }
+                    if (goodScore.PacteDVer == true)
+                    {
+                        goodScore.scoreGood += 1;
+                    }
                     NombreTotaleIns -= 1;
                     Instantiate(Fragement[2]);
+                    
                 }
             }
         }
@@ -97,8 +126,17 @@ public class CreateFragementLevel5 : MonoBehaviour
 
                 if (GameObject.Find("PacteDiable") == null && GameObject.Find("PacteDiable(Clone)") == null && GameObject.Find("PacteAnge") == null && GameObject.Find("PacteAnge(Clone)") == null && GameObject.Find("Ruse") == null && GameObject.Find("Ruse(Clone)") == null && GameObject.Find("Instabilite") == null && GameObject.Find("Instabilite(Clone)") == null)
                 {
+                    if (evilScore.PacteAVer == true)
+                    {
+                        evilScore.scoreEvil += 1;
+                    }
+                    if (goodScore.PacteDVer == true)
+                    {
+                        goodScore.scoreGood += 1;
+                    }
                     NombreTotaleRus -= 1;
                     Instantiate(Fragement[3]);
+                    
                 }
             }
         }

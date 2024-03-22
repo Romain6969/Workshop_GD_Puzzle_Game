@@ -49,7 +49,7 @@ public class ScoreGood : MonoBehaviour
         }
         if (evilScore.PacteAVer == true)
         {
-            scoreGood = scoreGood + 1;
+            evilScore.scoreEvil += 1;
         }
         if (FretissVer == true)
         {
@@ -131,7 +131,7 @@ public class ScoreGood : MonoBehaviour
         {
             scoreGood = scoreGood + RuseGood;
             instabiliteGood = -7;
-            evilScore.instabiliteEvil = 0;
+            evilScore.instabiliteEvil = 7;
             spriterendIns.sprite = NewSpriteIns;
             Destroy(GameObject.Find("Ruse"));
             Destroy(GameObject.Find("Ruse(Clone)"));

@@ -6,33 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GameOver.unity
-    guid: e0b13b1525349e64cab1b938660d954b
-  - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: 6d0f5a8cf88542c43adb229ce0f21659
+    path: Assets/Scenes/Menu 1.unity
+    guid: bf39b53711edfb449a0e0fcd19d32480
   - enabled: 1
     path: Assets/Scenes/Niveau1(Antho).unity
     guid: 46b3ffc393fbeb14aa0ebf00281a4f7d
   - enabled: 1
-    path: Assets/Scenes/Niveau2.unity
-    guid: 8abbdd2f3263de044b9a8e6ee0eee126
+    path: Assets/Scenes/Niveau2 1.unity
+    guid: 77ebb71984d0b094cbea10faaf176642
   - enabled: 1
-    path: Assets/Scenes/Niveau3.unity
-    guid: 038ea41810f9d284bad75dd0f219244a
+    path: Assets/Scenes/Niveau3 1.unity
+    guid: 84b6af8a9119e0f4c8fc9eb25baddd60
   - enabled: 1
-    path: Assets/Scenes/Niveau4.unity
-    guid: 8f67e51605bd8134ba70b4b8c2d2c208
-  - enabled: 1
-    path: Assets/Scenes/Niveau5.unity
-    guid: 81e1c4e83dfbd6244b0ede25153e8ae7
-  - enabled: 1
-    path: Assets/Scenes/Niveau6.unity
-    guid: 4ea1bf283e6bc13438dca3bb0ba494a5
+    path: Assets/Scenes/Niveau4 1.unity
+    guid: 64f1e41515a69ec4d9bc6c377067482d
   - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: c4792842dc6f4e54691e55812031849e
   - enabled: 1
-    path: Assets/Scenes/LevelSelection.unity
-    guid: ef50b012f8a9cec458b6f70f4ee03041
+    path: Assets/Scenes/GameOver.unity
+    guid: e0b13b1525349e64cab1b938660d954b
   m_configObjects: {}

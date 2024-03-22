@@ -41,14 +41,6 @@ public class ScoreEvil : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (PacteAVer == true)
-        {
-            scoreEvil = scoreEvil + 1;
-        }
-        if (goodScore.PacteDVer == true)
-        {
-            scoreEvil = scoreEvil + 1;
-        }
         if (FretissVer == true)
         {
             scoreEvil = scoreEvil - 1;
@@ -131,7 +123,7 @@ public class ScoreEvil : MonoBehaviour
         {
             scoreEvil = scoreEvil + RuseEvil;
             instabiliteEvil = -7;
-            goodScore.instabiliteGood = 0;
+            goodScore.instabiliteGood = 7;
             spriterendIns.sprite = NewSpriteIns;
             Destroy(GameObject.Find("Ruse"));
             Destroy(GameObject.Find("Ruse(Clone)"));
