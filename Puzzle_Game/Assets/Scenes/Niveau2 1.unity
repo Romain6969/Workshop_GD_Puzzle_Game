@@ -1214,7 +1214,7 @@ Transform:
   m_GameObject: {fileID: 508252873}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.19, y: -5.4764, z: 0}
+  m_LocalPosition: {x: -5.45, y: -5.4764, z: 0}
   m_LocalScale: {x: 2, y: 10.4128, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1873,7 +1873,7 @@ Transform:
   m_GameObject: {fileID: 899343240}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.19, y: -5.4145, z: 0}
+  m_LocalPosition: {x: 5.2, y: -5.4145, z: 0}
   m_LocalScale: {x: 2, y: 10.289, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1946,9 +1946,9 @@ MonoBehaviour:
   - {fileID: 4913396667924658282, guid: 6030e9cdb8470044faf22a145ad2680b, type: 3}
   - {fileID: 3601078500249551035, guid: 0cf9915d556d150439d47a957ba9ac54, type: 3}
   - {fileID: 7917033426987137735, guid: 1effaa8207977744eb8464d35901ce7d, type: 3}
-  NombreTotalePur: 20
-  NombreTotaleCor: 20
-  NombreTotaleIns: 20
+  NombreTotalePur: 5
+  NombreTotaleCor: 5
+  NombreTotaleIns: 10
   NbPur: {fileID: 1731573947}
   NbCor: {fileID: 1967751112}
   NbIns: {fileID: 138228176}
