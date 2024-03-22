@@ -47,9 +47,21 @@ public class ScoreGood : MonoBehaviour
         {
             scoreGood = scoreGood + 1;
         }
+        if (evilScore.PacteAVer == true)
+        {
+            scoreGood = scoreGood + 1;
+        }
         if (FretissVer == true)
         {
             scoreGood = scoreGood - 1;
+        }
+        if (evilScore.FretissVer == true)
+        {
+            evilScore.scoreEvil -= 1;
+        }
+        if (evilScore.scoreEvil < 0)
+        {
+            evilScore.scoreEvil = 0;
         }
         if (AmeMotivVer == true)
         {
@@ -118,7 +130,8 @@ public class ScoreGood : MonoBehaviour
         if (collision.CompareTag("Ruse"))
         {
             scoreGood = scoreGood + RuseGood;
-            instabiliteGood = instabiliteGood * -1;
+            instabiliteGood = -7;
+            evilScore.instabiliteEvil = 0;
             spriterendIns.sprite = NewSpriteIns;
             Destroy(GameObject.Find("Ruse"));
             Destroy(GameObject.Find("Ruse(Clone)"));

@@ -52,7 +52,7 @@ public class CreateFragementLevel6 : MonoBehaviour
         }
         if (NombreTotaleAmM != 0)
         {
-            if (NombreAleatoire > NBTarsh1 && NombreAleatoire < NBTarsh2)
+            if (NombreAleatoire >= NBTarsh1 && NombreAleatoire < NBTarsh2)
             {
                 if (GameObject.Find("Restauration") == null && GameObject.Find("Restauration(Clone)") == null && GameObject.Find("AmeMotivante") == null && GameObject.Find("AmeMotivante(Clone)") == null && GameObject.Find("Fletrissement") == null && GameObject.Find("Fletrissement(Clone)") == null && GameObject.Find("Stabilite") == null && GameObject.Find("Stabilite(Clone)") == null && GameObject.Find("Spirale") == null && GameObject.Find("Spirale(Clone)") == null)
                 {
@@ -65,10 +65,12 @@ public class CreateFragementLevel6 : MonoBehaviour
         {
             NBTarsh1 = 0.5f;
             NBTarsh2 = 0.5f;
+            NBTarsh3 = 1.5f;
+            NBTarsh4 = 3.5f;
         }
         if (NombreTotaleFle != 0)
         {
-            if (NombreAleatoire >= NBTarsh2 && NombreAleatoire <= NBTarsh3)
+            if (NombreAleatoire >= NBTarsh2 && NombreAleatoire < NBTarsh3)
             {
                 if (GameObject.Find("Restauration") == null && GameObject.Find("Restauration(Clone)") == null && GameObject.Find("AmeMotivante") == null && GameObject.Find("AmeMotivante(Clone)") == null && GameObject.Find("Fletrissement") == null && GameObject.Find("Fletrissement(Clone)") == null && GameObject.Find("Stabilite") == null && GameObject.Find("Stabilite(Clone)") == null && GameObject.Find("Spirale") == null && GameObject.Find("Spirale(Clone)") == null)
                 {
@@ -79,11 +81,14 @@ public class CreateFragementLevel6 : MonoBehaviour
         }
         if (NombreTotaleFle == 0)
         {
-            NBTarsh2 = 3;
+            NBTarsh1 = 0.5f;
+            NBTarsh2 = 1.5f;
+            NBTarsh3 = 1.5f;
+            NBTarsh4 = 3.5f;
         }
         if (NombreTotaleStab != 0)
         {
-            if (NombreAleatoire > NBTarsh3 && NombreAleatoire < NBTarsh4)
+            if (NombreAleatoire >= NBTarsh3 && NombreAleatoire < NBTarsh4)
             {
                 if (GameObject.Find("Stabilite") == null && GameObject.Find("Stabilite(Clone)") == null && GameObject.Find("Spirale") == null && GameObject.Find("Spirale(Clone)") == null && GameObject.Find("Restauration") == null && GameObject.Find("Restauration(Clone)") == null && GameObject.Find("AmeMotivante") == null && GameObject.Find("AmeMotivante(Clone)") == null && GameObject.Find("Fletrissement") == null && GameObject.Find("Fletrissement(Clone)") == null)
                 {
@@ -94,9 +99,10 @@ public class CreateFragementLevel6 : MonoBehaviour
         }
         if (NombreTotaleStab == 0)
         {
-            NBTarsh1 = 0.75f;
-            NBTarsh2 = 0.75f;
-            NBTarsh3 = 2.25f;
+            NBTarsh1 = 0.5f;
+            NBTarsh2 = 1.5f;
+            NBTarsh3 = 3.5f;
+            NBTarsh4 = 3.5f;
         }
         if (NombreTotaleSpi != 0)
         {
@@ -111,7 +117,7 @@ public class CreateFragementLevel6 : MonoBehaviour
         }
         if (NombreTotaleSpi == 0)
         {
-            NBTarsh3 = 5;
+            NBTarsh4 = 5;
         }
         if (NombreTotaleRes == 0 && NombreTotaleAmM == 0 && NombreTotaleFle == 0 && NombreTotaleSpi == 0 && NombreTotaleStab == 0 && GameObject.Find("Stabilite") == null && GameObject.Find("Stabilite(Clone)") == null && GameObject.Find("Spirale") == null && GameObject.Find("Spirale(Clone)") == null && GameObject.Find("Restauration") == null && GameObject.Find("Restauration(Clone)") == null && GameObject.Find("AmeMotivante") == null && GameObject.Find("AmeMotivante(Clone)") == null && GameObject.Find("Fletrissement") == null && GameObject.Find("Fletrissement(Clone)") == null)
         {

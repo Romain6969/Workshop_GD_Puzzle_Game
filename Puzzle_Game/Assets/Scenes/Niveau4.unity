@@ -449,7 +449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8204fb1b8e120e4196283fbec074106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  evilScore: {fileID: 0}
+  evilScore: {fileID: 2135767352}
   TextGood: {fileID: 1649192990}
   spriterendStab: {fileID: 3209360252765925297, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
   spriterendIns: {fileID: 5374520701685381836, guid: 1effaa8207977744eb8464d35901ce7d, type: 3}
@@ -476,7 +476,6 @@ MonoBehaviour:
   FretrissementGood: 1
   FretissVer: 0
   Scene: 
-  Level5: {fileID: 0}
 --- !u!61 &753733954
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1612,7 +1611,7 @@ MonoBehaviour:
   Fragement:
   - {fileID: 3035612222550700788, guid: 2a398ebe9c5908b4d8c73754fa09e868, type: 3}
   - {fileID: 7917033426987137735, guid: 1effaa8207977744eb8464d35901ce7d, type: 3}
-  NombreTotaleRus: 20
+  NombreTotaleRus: 5
   NombreTotaleIns: 20
   NbRus: {fileID: 74623496}
   NbIns: {fileID: 1012169974}
@@ -1650,6 +1649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf25470829da4447833067f8e33cc76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goodScore: {fileID: 753733953}
   TextEvil: {fileID: 1574032265}
   spriterendStab: {fileID: 3209360252765925297, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
   spriterendIns: {fileID: 5374520701685381836, guid: 1effaa8207977744eb8464d35901ce7d, type: 3}
@@ -1675,7 +1675,6 @@ MonoBehaviour:
   AmeMotivVer: 0
   FretrissementEvil: 1
   FretissVer: 0
-  Level5: {fileID: 0}
 --- !u!61 &2135767353
 BoxCollider2D:
   m_ObjectHideFlags: 0
