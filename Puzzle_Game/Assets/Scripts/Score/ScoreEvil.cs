@@ -31,7 +31,6 @@ public class ScoreEvil : MonoBehaviour
     public bool AmeMotivVer = false;
     public int FretrissementEvil = 1;
     public bool FretissVer = false;
-    public CreateFragementLevel5 Level5;
 
     private void Start()
     {
@@ -41,6 +40,29 @@ public class ScoreEvil : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (scoreEvil < 0)
+        {
+            scoreEvil = 0;
+        }
+        if (PacteAVer == true)
+        {
+            scoreEvil = scoreEvil + 1;
+        }
+        if (FretissVer == true)
+        {
+            scoreEvil = scoreEvil - 1;
+        }
+        if (AmeMotivVer == true)
+        {
+            stabiliteEvil = stabiliteEvil + 2;
+            ameSombreEvil = ameSombreEvil + 2;
+            corruptionEvil = corruptionEvil + 2;
+            instabiliteEvil = instabiliteEvil + 2;
+            ameExplosifEvil = ameExplosifEvil + 2;
+            RuseEvil = RuseEvil + 2;
+            SpiraleEvil = SpiraleEvil + 2;
+            PacteDiableEvil = PacteDiableEvil + 2;
+        }
         if (collision.CompareTag("Stabilite"))
         {
             scoreEvil = scoreEvil + stabiliteEvil;
@@ -113,8 +135,7 @@ public class ScoreEvil : MonoBehaviour
         if (collision.CompareTag("PacteAnge"))
         {
             scoreEvil = scoreEvil - PacteAngeEvil;
-            PacteAVer = false;
-            Level5.TotaleEvilPaA += 1;
+            PacteAVer = true;
             Destroy(GameObject.Find("PacteAnge"));
             Destroy(GameObject.Find("PacteAnge(Clone)"));
         }
@@ -133,17 +154,10 @@ public class ScoreEvil : MonoBehaviour
         if (collision.CompareTag("Fretrissement"))
         {
             FretissVer = true;
-            Destroy(GameObject.Find("Fretrissement"));
-            Destroy(GameObject.Find("Fretrissement(Clone)"));
+            Destroy(GameObject.Find("Fletrissement"));
+            Destroy(GameObject.Find("Fletrissement(Clone)"));
         }
-        if (AmeMotivVer == true)
-        {
-            scoreEvil = scoreEvil + AmeMotivanteEvil;
-        }
-        if (scoreEvil < 0)
-        {
-            scoreEvil = 0;
-        }
+        
         TextEvil.text = ($"{scoreEvil}");
     }
 }

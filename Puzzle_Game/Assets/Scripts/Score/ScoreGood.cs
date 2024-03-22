@@ -34,7 +34,6 @@ public class ScoreGood : MonoBehaviour
     public int FretrissementGood = 1;
     public bool FretissVer = false;
     public string Scene;
-    public CreateFragementLevel5 Level5;
 
     private void Start()
     {
@@ -44,7 +43,24 @@ public class ScoreGood : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Stabilite"))
+        if (PacteDVer == true)
+        {
+            scoreGood = scoreGood + 1;
+        }
+        if (FretissVer == true)
+        {
+            scoreGood = scoreGood - 1;
+        }
+        if (AmeMotivVer == true)
+        {
+            stabiliteGood = stabiliteGood + 2;
+            ameClairGood = ameClairGood + 2;
+            pureteGood = pureteGood + 2;
+            instabiliteGood = instabiliteGood + 2;
+            RuseGood = RuseGood + 2;
+            PacteAngeGood = PacteAngeGood + 2;
+        }
+        if (collision.CompareTag("Stabilite"))
         {
             scoreGood = scoreGood + stabiliteGood;
             Destroy(GameObject.Find("Stabilite"));
@@ -111,7 +127,6 @@ public class ScoreGood : MonoBehaviour
         {
             scoreGood = scoreGood - PacteDiableGood;
             PacteDVer = true;
-            Level5.TotaleGoodPaD += 1;
             Destroy(GameObject.Find("PacteDiable"));
             Destroy(GameObject.Find("PacteDiable(Clone)"));
         }
@@ -138,8 +153,8 @@ public class ScoreGood : MonoBehaviour
         if (collision.CompareTag("Fretrissement"))
         {
             FretissVer = true;
-            Destroy(GameObject.Find("Fretrissement"));
-            Destroy(GameObject.Find("Fretrissement(Clone)"));
+            Destroy(GameObject.Find("Fletrissement"));
+            Destroy(GameObject.Find("Fletrissement(Clone)"));
         }
 
         if (AmeMotivVer == true)
@@ -161,6 +176,7 @@ public class ScoreGood : MonoBehaviour
                 SceneManager.LoadScene(Scene);
             }
         }
+        
         TextGood.text = ($"{scoreGood}");
     }
 }

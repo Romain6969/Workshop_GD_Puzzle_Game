@@ -40,9 +40,6 @@ public class CreateFragementLevel5 : MonoBehaviour
         Debug.Log(TotaleEvilPaA);
         Debug.Log(TotaleGoodPaD);
 
-        bool PacteDver = goodScore.PacteDVer;
-        bool PacteAver = evilScore.PacteAVer;
-
         if (NombreTotalePaD != 0)
         {
             if (NombreAleatoire >= 0 && NombreAleatoire < NBTarsh1)
@@ -51,14 +48,7 @@ public class CreateFragementLevel5 : MonoBehaviour
                 {
                     NombreTotalePaD -= 1;
                     Instantiate(Fragement[0]);
-                    if (PacteDver == true)
-                    {
-                        goodScore.scoreGood = goodScore.scoreGood + TotaleGoodPaD;
-                    }
-                    if (PacteAver == true)
-                    {
-                        evilScore.scoreEvil += evilScore.scoreEvil + TotaleEvilPaA;
-                    }
+                    
                 }
             }
         }
@@ -74,14 +64,6 @@ public class CreateFragementLevel5 : MonoBehaviour
                 {
                     NombreTotalePaA -= 1;
                     Instantiate(Fragement[1]);
-                    if (PacteDver == true)
-                    {
-                        goodScore.scoreGood += goodScore.scoreGood + TotaleGoodPaD;
-                    }
-                    if (PacteAver == true)
-                    {
-                        evilScore.scoreEvil += evilScore.scoreEvil + TotaleEvilPaA;
-                    }
                 }
             }
         }
@@ -99,14 +81,6 @@ public class CreateFragementLevel5 : MonoBehaviour
                 {
                     NombreTotaleIns -= 1;
                     Instantiate(Fragement[2]);
-                    if (PacteDver == true)
-                    {
-                        goodScore.scoreGood += goodScore.scoreGood + TotaleGoodPaD;
-                    }
-                    if (PacteAver == true)
-                    {
-                        evilScore.scoreEvil += evilScore.scoreEvil + TotaleEvilPaA;
-                    }
                 }
             }
         }
@@ -125,14 +99,6 @@ public class CreateFragementLevel5 : MonoBehaviour
                 {
                     NombreTotaleRus -= 1;
                     Instantiate(Fragement[3]);
-                    if (PacteDver == true)
-                    {
-                        goodScore.scoreGood += goodScore.scoreGood + TotaleGoodPaD;
-                    }
-                    if (PacteAver == true)
-                    {
-                        evilScore.scoreEvil += evilScore.scoreEvil + TotaleEvilPaA;
-                    }
                 }
             }
         }
