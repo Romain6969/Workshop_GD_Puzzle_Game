@@ -1290,14 +1290,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf25470829da4447833067f8e33cc76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goodScore: {fileID: 0}
+  goodScore: {fileID: 1463325556}
   TextEvil: {fileID: 364221308}
-  spriterendStab: {fileID: 0}
-  spriterendIns: {fileID: 0}
-  newSprite: {fileID: 0}
-  OldSprite: {fileID: 0}
-  NewSpriteIns: {fileID: 0}
-  OldSpriteIns: {fileID: 0}
+  spriterendStab: {fileID: 3209360252765925297, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
+  spriterendIns: {fileID: 5374520701685381836, guid: 1effaa8207977744eb8464d35901ce7d, type: 3}
+  newSprite: {fileID: -1624159013, guid: 8f31d4d681961fd48827253af4079042, type: 3}
+  OldSprite: {fileID: -1728560440, guid: 8f31d4d681961fd48827253af4079042, type: 3}
+  NewSpriteIns: {fileID: -933302570, guid: 086b2f83c2db564408801e818b83225b, type: 3}
+  OldSpriteIns: {fileID: -199418875, guid: 086b2f83c2db564408801e818b83225b, type: 3}
   scoreEvil: 0
   stabiliteEvil: 1
   ameClairEvil: 1
@@ -1565,7 +1565,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.00009921193, y: 0.000050128}
-  m_SizeDelta: {x: 17.809, y: 10.018}
+  m_SizeDelta: {x: 18.09, y: 11.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &983704187
 MonoBehaviour:
@@ -1910,14 +1910,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8204fb1b8e120e4196283fbec074106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  evilScore: {fileID: 0}
+  evilScore: {fileID: 958625226}
   TextGood: {fileID: 101356465}
-  spriterendStab: {fileID: 0}
-  spriterendIns: {fileID: 0}
-  newSprite: {fileID: 0}
+  spriterendStab: {fileID: 3209360252765925297, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
+  spriterendIns: {fileID: 5374520701685381836, guid: 1effaa8207977744eb8464d35901ce7d, type: 3}
+  newSprite: {fileID: -1349925406, guid: 8f31d4d681961fd48827253af4079042, type: 3}
   OldSprite: {fileID: -1728560440, guid: 8f31d4d681961fd48827253af4079042, type: 3}
-  NewSpriteIns: {fileID: 0}
-  OldSpriteIns: {fileID: 0}
+  NewSpriteIns: {fileID: 1344108832, guid: 086b2f83c2db564408801e818b83225b, type: 3}
+  OldSpriteIns: {fileID: -199418875, guid: 086b2f83c2db564408801e818b83225b, type: 3}
   scoreGood: 0
   stabiliteGood: 1
   ameClairGood: 2
@@ -1936,7 +1936,7 @@ MonoBehaviour:
   AmeMotivVer: 0
   FretrissementGood: 1
   FretissVer: 0
-  Scene: 
+  Scene: GameOver
 --- !u!61 &1463325557
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2185,8 +2185,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000026703, y: 4.6059}
-  m_SizeDelta: {x: 17.809, y: 0.8061}
+  m_AnchoredPosition: {x: 0.000026703, y: 5.009}
+  m_SizeDelta: {x: 17.809, y: -0.000050068}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1687526950
 MonoBehaviour:
