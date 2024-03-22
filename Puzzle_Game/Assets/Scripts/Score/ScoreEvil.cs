@@ -6,6 +6,7 @@ using UnityEngine.Rendering.VirtualTexturing;
 
 public class ScoreEvil : MonoBehaviour
 {
+    public ScoreGood goodScore;
     public TMP_Text TextEvil;
     public SpriteRenderer spriterendStab;
     public SpriteRenderer spriterendIns;
@@ -40,17 +41,25 @@ public class ScoreEvil : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (scoreEvil < 0)
-        {
-            scoreEvil = 0;
-        }
         if (PacteAVer == true)
+        {
+            scoreEvil = scoreEvil + 1;
+        }
+        if (goodScore.PacteDVer == true)
         {
             scoreEvil = scoreEvil + 1;
         }
         if (FretissVer == true)
         {
             scoreEvil = scoreEvil - 1;
+        }
+        if (goodScore.FretissVer == true)
+        {
+            goodScore.scoreGood -= 1;
+        }
+        if (goodScore.scoreGood < 0)
+        {
+            goodScore.scoreGood = 0;
         }
         if (AmeMotivVer == true)
         {
@@ -121,7 +130,8 @@ public class ScoreEvil : MonoBehaviour
         if (collision.CompareTag("Ruse"))
         {
             scoreEvil = scoreEvil + RuseEvil;
-            instabiliteEvil = instabiliteEvil * -1;
+            instabiliteEvil = -7;
+            goodScore.instabiliteGood = 0;
             spriterendIns.sprite = NewSpriteIns;
             Destroy(GameObject.Find("Ruse"));
             Destroy(GameObject.Find("Ruse(Clone)"));
@@ -157,7 +167,10 @@ public class ScoreEvil : MonoBehaviour
             Destroy(GameObject.Find("Fletrissement"));
             Destroy(GameObject.Find("Fletrissement(Clone)"));
         }
-        
+        if (scoreEvil < 0)
+        {
+            scoreEvil = 0;
+        }
         TextEvil.text = ($"{scoreEvil}");
     }
 }

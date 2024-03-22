@@ -733,7 +733,6 @@ MonoBehaviour:
   FretrissementGood: 1
   FretissVer: 0
   Scene: GameOver
-  Level5: {fileID: 1461902314}
 --- !u!61 &749452098
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1664,6 +1663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf25470829da4447833067f8e33cc76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goodScore: {fileID: 749452097}
   TextEvil: {fileID: 68691075}
   spriterendStab: {fileID: 3209360252765925297, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
   spriterendIns: {fileID: 5374520701685381836, guid: 1effaa8207977744eb8464d35901ce7d, type: 3}
@@ -1689,7 +1689,6 @@ MonoBehaviour:
   AmeMotivVer: 0
   FretrissementEvil: 1
   FretissVer: 0
-  Level5: {fileID: 1461902314}
 --- !u!61 &1634338146
 BoxCollider2D:
   m_ObjectHideFlags: 0
