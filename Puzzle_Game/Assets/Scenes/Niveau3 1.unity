@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextEvil: {fileID: 1483107532}
-  spriterendStab: {fileID: 0}
+  spriterendStab: {fileID: 3209360252765925297, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
   spriterendIns: {fileID: 0}
   newSprite: {fileID: -1624159013, guid: 8f31d4d681961fd48827253af4079042, type: 3}
   OldSprite: {fileID: -1728560440, guid: 8f31d4d681961fd48827253af4079042, type: 3}
@@ -180,7 +180,6 @@ MonoBehaviour:
   AmeMotivVer: 0
   FretrissementEvil: 1
   FretissVer: 0
-  Level5: {fileID: 0}
 --- !u!61 &67154461
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1057,7 +1056,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   evilScore: {fileID: 0}
   TextGood: {fileID: 925091051}
-  spriterendStab: {fileID: 0}
+  spriterendStab: {fileID: 3209360252765925297, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
   spriterendIns: {fileID: 0}
   newSprite: {fileID: -1349925406, guid: 8f31d4d681961fd48827253af4079042, type: 3}
   OldSprite: {fileID: -1728560440, guid: 8f31d4d681961fd48827253af4079042, type: 3}
@@ -1082,7 +1081,6 @@ MonoBehaviour:
   FretrissementGood: 1
   FretissVer: 0
   Scene: 
-  Level5: {fileID: 0}
 --- !u!61 &760867865
 BoxCollider2D:
   m_ObjectHideFlags: 0
