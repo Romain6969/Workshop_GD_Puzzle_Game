@@ -476,6 +476,8 @@ MonoBehaviour:
   Scene: Win
   NBTarsh1: 0.5
   NBTarsh2: 1.75
+  NBTarsh3: 3
+  NBTarsh4: 4.25
 --- !u!1 &380341117
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,12 +645,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextEvil: {fileID: 1872325075}
-  spriterendStab: {fileID: 0}
-  spriterendIns: {fileID: 0}
-  newSprite: {fileID: 0}
-  OldSprite: {fileID: 0}
-  NewSpriteIns: {fileID: 0}
-  OldSpriteIns: {fileID: 0}
+  spriterendStab: {fileID: 3209360252765925297, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
+  spriterendIns: {fileID: 5374520701685381836, guid: 1effaa8207977744eb8464d35901ce7d, type: 3}
+  newSprite: {fileID: -1624159013, guid: 8f31d4d681961fd48827253af4079042, type: 3}
+  OldSprite: {fileID: -1728560440, guid: 8f31d4d681961fd48827253af4079042, type: 3}
+  NewSpriteIns: {fileID: -933302570, guid: 086b2f83c2db564408801e818b83225b, type: 3}
+  OldSpriteIns: {fileID: -199418875, guid: 086b2f83c2db564408801e818b83225b, type: 3}
   scoreEvil: 0
   stabiliteEvil: 1
   ameClairEvil: 1
@@ -1260,12 +1262,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   evilScore: {fileID: 509522238}
   TextGood: {fileID: 2140957017}
-  spriterendStab: {fileID: 0}
-  spriterendIns: {fileID: 0}
-  newSprite: {fileID: 0}
-  OldSprite: {fileID: 0}
-  NewSpriteIns: {fileID: 0}
-  OldSpriteIns: {fileID: 0}
+  spriterendStab: {fileID: 3209360252765925297, guid: 2c5b6b5f95fd06547a6b53d0e82e6b09, type: 3}
+  spriterendIns: {fileID: 5374520701685381836, guid: 1effaa8207977744eb8464d35901ce7d, type: 3}
+  newSprite: {fileID: -1349925406, guid: 8f31d4d681961fd48827253af4079042, type: 3}
+  OldSprite: {fileID: -1728560440, guid: 8f31d4d681961fd48827253af4079042, type: 3}
+  NewSpriteIns: {fileID: 1344108832, guid: 086b2f83c2db564408801e818b83225b, type: 3}
+  OldSpriteIns: {fileID: -199418875, guid: 086b2f83c2db564408801e818b83225b, type: 3}
   scoreGood: 0
   stabiliteGood: 1
   ameClairGood: 2

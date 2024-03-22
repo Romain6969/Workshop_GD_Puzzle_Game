@@ -128,7 +128,7 @@ public class ScoreEvil : MonoBehaviour
         }
         if (collision.CompareTag("PacteDiable"))
         {
-            scoreEvil = scoreEvil - PacteDiableEvil;
+            scoreEvil = scoreEvil + PacteDiableEvil;
             Destroy(GameObject.Find("PacteDiable"));
             Destroy(GameObject.Find("PacteDiable(Clone)"));
         }
