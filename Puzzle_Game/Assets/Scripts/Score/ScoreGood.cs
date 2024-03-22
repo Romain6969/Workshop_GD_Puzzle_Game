@@ -41,6 +41,12 @@ public class ScoreGood : MonoBehaviour
         spriterendIns.sprite = OldSpriteIns;
 
     }
+
+    private void FixedUpdate()
+    {
+        TextGood.text = ($"{scoreGood}");
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (PacteDVer == true)
@@ -190,6 +196,6 @@ public class ScoreGood : MonoBehaviour
             }
         }
         
-        TextGood.text = ($"{scoreGood}");
+        
     }
 }

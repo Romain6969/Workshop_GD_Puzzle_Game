@@ -38,6 +38,10 @@ public class ScoreEvil : MonoBehaviour
         spriterendStab.sprite = OldSprite;
         spriterendIns.sprite = OldSpriteIns;
     }
+    private void FixedUpdate()
+    {
+        TextEvil.text = ($"{scoreEvil}");
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -163,6 +167,6 @@ public class ScoreEvil : MonoBehaviour
         {
             scoreEvil = 0;
         }
-        TextEvil.text = ($"{scoreEvil}");
+        
     }
 }
